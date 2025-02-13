@@ -105,7 +105,7 @@ const sentMsg = await conn.sendMessage(from, {
                                 //thumbnailUrl: data.thumbnail, // This should match the image URL provided above
                                 //renderLargerThumbnail: true,
                                 //showAdAttribution: true
-                            }
+                            //}
                         //}
                     
                     }, { quoted: mek });
@@ -143,7 +143,7 @@ const sentMsg = await conn.sendMessage(from, {
                                 //thumbnailUrl: data.thumbnail, // This should match the image URL provided above
                                 //renderLargerThumbnail: true,
                                 //showAdAttribution: true
-                            }
+                            //}
                         //}
                     
                     }, { quoted: mek });
@@ -261,7 +261,7 @@ const sentMsg = await conn.sendMessage(from, {
                                 //thumbnailUrl: data.thumbnail, // This should match the image URL provided above
                                 //renderLargerThumbnail: true,
                                 //showAdAttribution: true
-                            }
+                            //}
                         //}
                     
                     }, { quoted: mek });
@@ -299,7 +299,7 @@ const sentMsg = await conn.sendMessage(from, {
                                 //thumbnailUrl: data.thumbnail, // This should match the image URL provided above
                                 //renderLargerThumbnail: true,
                                 //showAdAttribution: true
-                            }
+                            //}
                         //}
                     
                     }, { quoted: mek });
