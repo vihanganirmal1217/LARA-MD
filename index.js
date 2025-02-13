@@ -36,14 +36,6 @@ const {
     
     const ownerNumber = ['94768211853']
     
-        //____________Download Plugins______________
-    if (!fs.existsSync(__dirname + '/lara/plugins/ytsong.js')) {
-    const filer = File.fromURL(`https://mega.nz/file/7mI0nBgJ#G0ZvLUF-Tl6R0wIE3qD1jCxpoeg-vYXsXifMum8Ui-Q`)
-    filer.download((err, data) => {
-    if(err) throw err
-    fs.writeFile(__dirname + '/lara/plugins/ytsong.js', data, () => {
-    console.log("Lara Secret Plugins downloaded Successful ✅")
-    })})}
     
     //===================SESSION-AUTH============================
     if (!fs.existsSync(__dirname + '/lara/session/creds.json')) {
