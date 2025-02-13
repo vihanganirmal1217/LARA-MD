@@ -1,11 +1,7 @@
-//  SUBZERO MD PROPERTY
-// MADE BY MR FRANK
-// REMOVE THIS IF YOU ARE GAY
-
+const { cmd, commands } = require('../command');
 const axios = require('axios');
 const ytSearch = require('yt-search');
-const config = require('../settings');
-const { cmd, commands } = require('../command');
+const { fetchJson } = require('../functions');
 
 
 //  SUBZERO MD PROPERTY
