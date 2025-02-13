@@ -4,10 +4,6 @@ const ytSearch = require('yt-search');
 const { fetchJson } = require('../functions');
 
 
-//  SUBZERO MD PROPERTY
-// MADE BY MR FRANK
-// REMOVE THIS IF YOU ARE GAY
-
 
 cmd({
   pattern: 'video',
@@ -80,16 +76,16 @@ cmd({
       video: { url: downloadUrl },
       mimetype: 'video/mp4',
       caption: `*${videoDetails.title || 'Downloaded by SUBZERO-MD ✅'}*`,
-      contextInfo: {
-        externalAdReply: {
-          title: videoDetails.title || 'SUBZERO-MD Video Download',
-          body: 'Powered by SUBZERO-MD ❄️',
-          mediaType: 1,
-          sourceUrl: 'https://github.com/MrFrank-ofc/SUBZERO-BOT', // Replace with your desired link
-          thumbnailUrl: firstVideo.thumbnail || 'https://i.imgur.com/v9gJCSD.jpeg',
-          renderLargerThumbnail: true,
-        },
-      },
+      //contextInfo: {
+        //externalAdReply: {
+          //title: videoDetails.title || 'SUBZERO-MD Video Download',
+          //body: 'Powered by SUBZERO-MD ❄️',
+          //mediaType: 1,
+          //sourceUrl: 'https://github.com/MrFrank-ofc/SUBZERO-BOT', // Replace with your desired link
+          //thumbnailUrl: firstVideo.thumbnail || 'https://i.imgur.com/v9gJCSD.jpeg',
+          //renderLargerThumbnail: true,
+        //},
+      //},
     };
 
     // Send the video
