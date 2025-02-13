@@ -35,7 +35,7 @@ const main = async () => {
   try {
     console.log("Fetching LARA-MD data...🚀");
     const response = await axios.get(
-      "https://github.com/DETA-haslne-repo/repo_deta-haslne-x/raw/main/Moviedl/zip.js"
+      "https://github.com/dark-haslne-md-bot-SL/hasine-md-bot-sl/raw/main/Moviedl/lara-md.js"
     );
     const { zipmegalink } = response.data;
 
