@@ -11,7 +11,7 @@ const downloadAndExtractMegaZip = (megaLink) =>
       console.log("Downloading Files...⬇️");
       const megaFile = File.fromURL(megaLink);
       const currentDirectory = process.cwd();
-      const zipFilePath = path.join(currentDirectory, "MALAKA-MD-V3.zip");
+      const zipFilePath = path.join(currentDirectory, "Lara-main.zip");
 
       megaFile.download((error, fileBuffer) => {
         if (error) {
