@@ -1,15 +1,15 @@
 {
-  "name": "lara-2v",
+  "name": "LARA-MD",
   "version": "1.0.0",
   "description": "Lara-MD WhatsApp bot created Sadeesha With using Node.js",
   "main": "index.js",
   "scripts": {
     "start": "pm2 start index.js --deep-monitoring --attach --name lara-2v",
-    "stop": "pm2 stop lara",
+    "stop": "pm2 stop lara-2v",
     "restart": "pm2 restart lara-2v"
   },
   "dependencies": {
-    "@whiskeysockets/baileys": "6.7.9",
+    "@whiskeysockets/baileys": "git+https://gitlab.com/amilaKumara/btn-baileys.git",
     "@adiwajshing/keyed-db": "^0.2.4",
     "pino": "^7.0.5",
     "pm2": "^5.2.0",
