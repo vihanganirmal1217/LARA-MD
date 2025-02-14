@@ -60,22 +60,14 @@ const sentMsg = await conn.sendMessage(from, {
   contextInfo: {
       mentionedJid: ['94774132871@s.whatsapp.net'], // specify mentioned JID(s) if any
       groupMentions: [],
-      forwardingScore: 999,
+      forwardingScore: 1,
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
           newsletterJid: '120363371157309766@newsletter',
           newsletterName: "S U H A S  -  M D 🇱🇰",
-          serverMessageId: 999
+          serverMessageId: 1
       },
-      externalAdReply: {
-          title: 'ᴀ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ',
-          body: '✨ 𝗦𝗨𝗛𝗔𝗦-𝗠𝗗 💕',
-          mediaType: 1,
-          sourceUrl: "https://github.com/SUHAS-BRO/SUHAS-MD",
-          thumbnailUrl: 'https://i.ibb.co/N6nWD9m/20250128-100821.jpg', // This should match the image URL provided above
-          renderLargerThumbnail: true,
-          showAdAttribution: false
-      }
+      
   }
 });
 const messageID = sentMsg.key.id; // Save the message ID for later reference
@@ -109,12 +101,12 @@ conn.ev.on('messages.upsert', async (messageUpdate) => {
               contextInfo: {
                   mentionedJid: ['94774132871@s.whatsapp.net'], // specify mentioned JID(s) if any
                   groupMentions: [],
-                  forwardingScore: 999,
+                  forwardingScore: 1,
                   isForwarded: true,
                   forwardedNewsletterMessageInfo: {
                       newsletterJid: '120363371157309766@newsletter',
                       newsletterName: "S U H A S  -  M D 🇱🇰",
-                      serverMessageId: 999
+                      serverMessageId: 1
                   },
                   
               }
@@ -129,12 +121,12 @@ conn.ev.on('messages.upsert', async (messageUpdate) => {
               contextInfo: {
                   mentionedJid: ['94774132871@s.whatsapp.net'], // specify mentioned JID(s) if any
                   groupMentions: [],
-                  forwardingScore: 999,
+                  forwardingScore: 1,
                   isForwarded: true,
                   forwardedNewsletterMessageInfo: {
                       newsletterJid: '120363371157309766@newsletter',
                       newsletterName: "S U H A S  -  M D 🇱🇰",
-                      serverMessageId: 999
+                      serverMessageId: 1
                   },
                   
               }
@@ -155,12 +147,12 @@ conn.ev.on('messages.upsert', async (messageUpdate) => {
               contextInfo: {
                 mentionedJid: ['94774132871@s.whatsapp.net'], // specify mentioned JID(s) if any
                 groupMentions: [],
-                forwardingScore: 999,
+                forwardingScore: 1,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363371157309766@newsletter',
                     newsletterName: "S U H A S  -  M D 🇱🇰",
-                    serverMessageId: 999
+                    serverMessageId: 1
                 },
                 
             }
