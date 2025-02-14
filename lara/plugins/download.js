@@ -9,8 +9,8 @@ const { cmd, commands } = require('../command')
 
 
 cmd({
-    pattern: "tiktok",
-    alias: ["tt"],
+    pattern: "tiktok2",
+    alias: ["tt2"],
     react: "🎥",
     desc: "download tt videos",
     category: "download",
@@ -159,8 +159,8 @@ reply(`${e}`);
 
 // Facebook Downloader
 cmd({
-  pattern: "fb",
-  alias: ["facebook"],
+  pattern: "fb2",
+  alias: ["facebook2"],
   desc: "Download Facebook videos",
   category: "download",
   filename: __filename
