@@ -154,6 +154,7 @@ jobs:
 | SADEESHA 👤              | VIHANGA 👤              |
 |---------------------|---------------------|
 [![Owner](https://i.ibb.co/q9pChng/IMG-20240924-WA0019.jpg)](https://github.com/sadiyamin/) | [![Vihanga](https://i.ibb.co/chgBVvB/vihanga.jpg)](https://github.com/sadiyamin/) |
+[MALAKA-MD](https://i.ibb.co/7dRnQk5d/8205.jpg)](https://github.com/sadiyamin/) |
 </div>
 <hr>
 
