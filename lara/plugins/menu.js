@@ -555,7 +555,7 @@ let menu9 = `
                     newsletterName: "Lααɾα-ᴍᴅ ✻",
                     serverMessageId: 999
                 },
-                externalAdReply: {
+                /*externalAdReply: {
                     title: 'LARA MD',
                     body: 'ꜱᴀᴅᴇᴇꜱʜᴀ ᴛʜᴀʀᴜᴍɪɴ',
                     mediaType: 1,
@@ -564,6 +564,7 @@ let menu9 = `
                     renderLargerThumbnail: false,
                     showAdAttribution: true
                 }
+                */
             }
      }, {quoted: mek});
                 } else if (messageType === '2') {
