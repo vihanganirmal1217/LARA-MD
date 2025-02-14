@@ -30,41 +30,39 @@ await conn.sendMessage(from, { react: { text: "⏳", key: mek.key } });
 const result = await getFBInfo(q);
 
     const captionHeader = `
-*SUHAS-MD FB DOWNLOADER.⬇️*
+┏━┫*⚬Lααɾα-ᴍᴅ-ꜰʙ⚬*┣━✾
+┃            *ᴸ  ͣ  ͣ  ͬ  ͣ  ✻  ᴸ  ͣ  ͣ  ͬ  ͣ*
+┻
+*⌛ᴅᴜʀᴀᴛɪᴏɴ* : ${Fb.result.duration}
 
-◈ Title: ${result.title}
+*🔢 ʀᴇᴘʟʏ ʙᴇʟᴏᴡ ᴛʜᴇ ɴᴜᴍʙᴇʀ*
 
-🔢 *Reply The Below Number:*
+*ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅ 🎬*
 
+*1.1*     ┃  *ꜱᴅ Qᴜᴀʟɪᴛʏ*
+*1.2*     ┃  *ʜᴅ Qᴜᴀʟɪᴛʏ*
 
-*Facebook Video.🎥*
+*ᴀᴜᴅɪᴏ ᴅᴏᴡɴʟᴏᴀᴅ 🎧*
 
-*1.1 | SD Qulity.*
-*1.2 | HD Qulity.*
+*2.1*     ┃  *ᴀᴜᴅɪᴏ*
+*2.2*     ┃  *ᴅᴏᴄᴜᴍᴇɴᴛ*
+*2.3*     ┃  *ᴠᴏɪᴄᴇ*
 
+> Lααɾα-ᴍᴅ ✻
 
-*Facebook Audio.🎶*
-
-*2.1 | Audio File*
-*2.2 | Document File*
-*2.3 | Voice Cut*
-
-◈ Url: ${q} 
-
-> *© 𝙿𝚘𝚠𝚎𝚛𝚎𝚍 𝙱𝚢 𝚂𝚄𝙷𝙰𝚂  〽️𝙳*
 `;
 
 const sentMsg = await conn.sendMessage(from, {
   image: { url: result.thumbnail}, // Ensure `img.allmenu` is a valid image URL or base64 encoded image
   caption: captionHeader,
   contextInfo: {
-      mentionedJid: ['94774132871@s.whatsapp.net'], // specify mentioned JID(s) if any
+      mentionedJid: ['94779062397@s.whatsapp.net'], // specify mentioned JID(s) if any
       groupMentions: [],
       forwardingScore: 1,
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
-          newsletterJid: '120363371157309766@newsletter',
-          newsletterName: "S U H A S  -  M D 🇱🇰",
+          newsletterJid: '120363192254044294@newsletter',
+          newsletterName: "Lααɾα-ᴍᴅ ✻",
           serverMessageId: 1
       },
       
@@ -97,15 +95,15 @@ conn.ev.on('messages.upsert', async (messageUpdate) => {
             // Handle option 1 (sd File)
             await conn.sendMessage(from, {
               video: { url: result.sd}, // Ensure `img.allmenu` is a valid image URL or base64 encoded image
-              caption: "> *© 𝙿𝚘𝚠𝚎𝚛𝚎𝚍 𝙱𝚢 𝚂𝚄𝙷𝙰𝚂  〽️𝙳*",
+              caption: "*© ᴄʀᴇᴀᴛᴇᴅ ʙʏ ꜱᴀᴅᴇᴇꜱʜᴀ ᴄᴏᴅᴇʀ · · ·*",
               contextInfo: {
-                  mentionedJid: ['94774132871@s.whatsapp.net'], // specify mentioned JID(s) if any
+                  mentionedJid: ['94779062397@s.whatsapp.net'], // specify mentioned JID(s) if any
                   groupMentions: [],
                   forwardingScore: 1,
                   isForwarded: true,
                   forwardedNewsletterMessageInfo: {
-                      newsletterJid: '120363371157309766@newsletter',
-                      newsletterName: "S U H A S  -  M D 🇱🇰",
+                      newsletterJid: '120363192254044294@newsletter',
+                      newsletterName: "Lααɾα-ᴍᴅ ✻",
                       serverMessageId: 1
                   },
                   
@@ -117,15 +115,15 @@ conn.ev.on('messages.upsert', async (messageUpdate) => {
             // Handle option 2 (hd File)
             await conn.sendMessage(from, {
               video: { url: result.hd}, // Ensure `img.allmenu` is a valid image URL or base64 encoded image
-              caption: "> *© 𝙿𝚘𝚠𝚎𝚛𝚎𝚍 𝙱𝚢 𝚂𝚄𝙷𝙰𝚂  〽️𝙳*",
+              caption: "*© ᴄʀᴇᴀᴛᴇᴅ ʙʏ ꜱᴀᴅᴇᴇꜱʜᴀ ᴄᴏᴅᴇʀ · · ·*",
               contextInfo: {
-                  mentionedJid: ['94774132871@s.whatsapp.net'], // specify mentioned JID(s) if any
+                  mentionedJid: ['94779062397@s.whatsapp.net'], // specify mentioned JID(s) if any
                   groupMentions: [],
                   forwardingScore: 1,
                   isForwarded: true,
                   forwardedNewsletterMessageInfo: {
-                      newsletterJid: '120363371157309766@newsletter',
-                      newsletterName: "S U H A S  -  M D 🇱🇰",
+                      newsletterJid: '120363192254044294@newsletter',
+                      newsletterName: "Lααɾα-ᴍᴅ ✻",
                       serverMessageId: 1
                   },
                   
@@ -142,16 +140,16 @@ conn.ev.on('messages.upsert', async (messageUpdate) => {
             await conn.sendMessage(from, {
               document: { url: result.sd },
               mimetype: "audio/mpeg",
-              fileName: `SUHAS-MD/FBDL.mp3`,
-              caption: "> *© 𝙿𝚘𝚠𝚎𝚛𝚎𝚍 𝙱𝚢 𝚂𝚄𝙷𝙰𝚂  〽️𝙳*",
+              fileName: `Lara-MD/FBDL.mp3`,
+              caption: "*© ᴄʀᴇᴀᴛᴇᴅ ʙʏ ꜱᴀᴅᴇᴇꜱʜᴀ ᴄᴏᴅᴇʀ · · ·*",
               contextInfo: {
-                mentionedJid: ['94774132871@s.whatsapp.net'], // specify mentioned JID(s) if any
+                mentionedJid: ['94779062397@s.whatsapp.net'], // specify mentioned JID(s) if any
                 groupMentions: [],
                 forwardingScore: 1,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363371157309766@newsletter',
-                    newsletterName: "S U H A S  -  M D 🇱🇰",
+                    newsletterJid: '120363192254044294@newsletter',
+                    newsletterName: "Lααɾα-ᴍᴅ ✻",
                     serverMessageId: 1
                 },
                 
