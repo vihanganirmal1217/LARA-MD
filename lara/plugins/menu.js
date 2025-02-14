@@ -95,7 +95,7 @@ let cap = `
                 carouselMessage: proto.Message.InteractiveMessage.CarouselMessage.fromObject({
                   cards: push
                 }),
-                /*contextInfo: {
+                contextInfo: {
                       mentionedJid: ['94779062397@s.whatsapp.net'], 
                       forwardingScore: 1,
                       isForwarded: true,
@@ -104,8 +104,8 @@ let cap = `
                       newsletterName: 'lara',
                       serverMessageId: 143
                     }
-                    */
-                    //}
+                    
+                    }
               })
             }
           }
