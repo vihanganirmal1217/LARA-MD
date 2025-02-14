@@ -9,6 +9,109 @@ const axios = require('axios');
 const { cmd, commands } = require('../command')
 
 
+cmd({
+  pattern: "tiktok",
+  alias: ['tt', 'ttdown'],
+  react: "🎥",
+  desc: "Download TikTok Videos",
+  category: "download",
+  filename: __filename
+}, async (bot, message, args, { from, quoted, reply, q }) => {
+  try {
+    if (!q) return await reply("Please provide a TikTok URL.");
+    
+    if (!q.includes('tiktok.com')) return await reply("This URL is invalid.");
+
+    const contextInfo = {
+      forwardingScore: 1,
+      isForwarded: true,
+      forwardedNewsletterMessageInfo: {
+        newsletterName: "ᴍᴀʟᴀᴋᴀ-ᴍᴅ",
+        newsletterJid: "120363382823666763@newsletter"
+      },
+    };
+
+    const apiUrl = `https://dark-shan-yt.koyeb.app/download/tiktok?url=${encodeURIComponent(q)}`;
+    const apiResponse = await fetchJson(apiUrl);
+
+    if (!apiResponse.status || !apiResponse.data) {
+      return await reply("❌ Could not fetch video details.");
+    }
+
+    const videoData = apiResponse.data;
+    const videoOptions = videoData.data;
+
+    const downloadMessage = `
+    *㋛ 𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝙼𝙰𝙻𝙰𝙺𝙰-𝙼𝙳 Ｍ〽️*\n\n*TIKTOK DOWNLOADER*\n\n*📃
+      *★| TikTok Downloader*\n
+      *★| Title:* ${videoData.title}
+      *★| Author:* ${videoData.author.fullname}
+      *★| Duration:* ${videoData.duration}
+      *★| Views:* ${videoData.stats.views}
+      
+      *🔢 Reply with a number to download:*\n
+    1.1  📼 No Watermark - SD
+    1.2  📼 No Watermark - HD
+    1.3  📼 Watermarked Version
+    1.4. 🎶AUDIO DOWNLOAD
+
+    *㋛ 𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝙼𝙰𝙻𝙰𝙺𝙰-𝙼𝙳 Ｍ〽️*`;
+
+    const sentMessage = await bot.sendMessage(from, {
+      image: { url: videoData.cover || '' },
+      caption: downloadMessage,
+      contextInfo
+    }, { quoted: message });
+
+    bot.ev.on("messages.upsert", async (msgUpdate) => {
+      const receivedMessage = msgUpdate.messages[0];
+
+      if (!receivedMessage.message || !receivedMessage.message.extendedTextMessage) return;
+
+      const userResponse = receivedMessage.message.extendedTextMessage.text.trim();
+
+      if (receivedMessage.message.extendedTextMessage.contextInfo &&
+          receivedMessage.message.extendedTextMessage.contextInfo.stanzaId === sentMessage.key.id) {
+        
+        let downloadUrl;
+        let captionText = "*㋛ 𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝙼𝙰𝙻𝙰𝙺𝙰-𝙼𝙳 Ｍ〽️*";
+
+        switch (userResponse) {
+          case '1.1':
+            downloadUrl = videoOptions.find(v => v.type === "nowatermark")?.url;
+            break;
+          case '1.2':
+            downloadUrl = videoOptions.find(v => v.type === "nowatermark_hd")?.url;
+            break;
+          case '1.3':
+            downloadUrl = videoOptions.find(v => v.type === "watermark")?.url;
+            break;
+          case '1.4':
+            downloadUrl = videoData.music_info.url;
+            captionText = "*㋛ 𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝙼𝙰𝙻𝙰𝙺𝙰-𝙼𝙳 Ｍ〽️*";
+            break;
+          default:
+            return await bot.sendMessage(from, { text: "❌ Invalid option. Try again." }, { quoted: receivedMessage });
+        }
+
+        if (downloadUrl) {
+          const mediaType = userResponse === '4' ? "audio/mpeg" : "video/mp4";
+          await bot.sendMessage(from, {
+            [userResponse === '4' ? "audio" : "video"]: { url: downloadUrl },
+            mimetype: mediaType,
+            caption: captionText
+          }, { quoted: receivedMessage });
+        }
+      }
+    });
+
+  } catch (error) {
+    console.error(error);
+    await reply("❌ Error fetching the video. Please try again later.");
+  }
+});
+
+
 // Facebook Downloader
 cmd({
   pattern: "facebook",
