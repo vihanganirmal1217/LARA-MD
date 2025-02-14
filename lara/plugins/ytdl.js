@@ -211,7 +211,7 @@ const sentMsg = await conn.sendMessage(from, {
                     newsletterName: "Lααɾα-ᴍᴅ ✻",
                     serverMessageId: 999
                 },
-                externalAdReply: {
+                /*externalAdReply: {
                     title: 'LARA MD',
                     body: 'ꜱᴀᴅᴇᴇꜱʜᴀ ᴛʜᴀʀᴜᴍɪɴ',
                     mediaType: 1,
@@ -220,6 +220,7 @@ const sentMsg = await conn.sendMessage(from, {
                     renderLargerThumbnail: false,
                     showAdAttribution: true
                 }
+                */
             }
      }, {quoted: mek});
      
