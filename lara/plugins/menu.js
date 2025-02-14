@@ -105,7 +105,7 @@ let cap = `
                       serverMessageId: 143
                     }
                     */
-                    }
+                    //}
               })
             }
           }
