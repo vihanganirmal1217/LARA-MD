@@ -5,7 +5,7 @@ const axios = require("axios");
 //const fg = require("api-dylux");
 //const xnxx = require("xnxx-dl");
 const yts = require("yt-search");
-const config = require("../settings");
+const config = require('../../settings')
 const {
   File
 } = require('megajs');
