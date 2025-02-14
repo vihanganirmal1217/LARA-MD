@@ -26,8 +26,8 @@ cmd({
       forwardingScore: 1,
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
-        newsletterName: "ᴍᴀʟᴀᴋᴀ-ᴍᴅ",
-        newsletterJid: "120363382823666763@newsletter"
+        newsletterName: "Lααɾα-ᴍᴅ ✻",
+        newsletterJid: "120363192254044294@newsletter"
       },
     };
 
@@ -42,7 +42,7 @@ cmd({
     const videoOptions = videoData.data;
 
     const downloadMessage = `
-    *㋛ 𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝙼𝙰𝙻𝙰𝙺𝙰-𝙼𝙳 Ｍ〽️*\n\n*TIKTOK DOWNLOADER*\n\n*📃
+    *Lααɾα-ᴍᴅ-ᴛɪᴋᴛᴏᴋ⚬*\n\n*TIKTOK DOWNLOADER*\n\n*📃
       *★| TikTok Downloader*\n
       *★| Title:* ${videoData.title}
       *★| Author:* ${videoData.author.fullname}
@@ -55,7 +55,7 @@ cmd({
     1.3  📼 Watermarked Version
     1.4. 🎶AUDIO DOWNLOAD
 
-    *㋛ 𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝙼𝙰𝙻𝙰𝙺𝙰-𝙼𝙳 Ｍ〽️*`;
+    > Lααɾα-ᴍᴅ ✻`;
 
     const sentMessage = await bot.sendMessage(from, {
       image: { url: videoData.cover || '' },
@@ -74,7 +74,7 @@ cmd({
           receivedMessage.message.extendedTextMessage.contextInfo.stanzaId === sentMessage.key.id) {
         
         let downloadUrl;
-        let captionText = "*㋛ 𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝙼𝙰𝙻𝙰𝙺𝙰-𝙼𝙳 Ｍ〽️*";
+        let captionText = "*㋛ 𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 Lααɾα-ᴍᴅ ✻*";
 
         switch (userResponse) {
           case '1.1':
@@ -88,7 +88,7 @@ cmd({
             break;
           case '1.4':
             downloadUrl = videoData.music_info.url;
-            captionText = "*㋛ 𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝙼𝙰𝙻𝙰𝙺𝙰-𝙼𝙳 Ｍ〽️*";
+            captionText = "*㋛ 𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 Lααɾα-ᴍᴅ ✻*";
             break;
           default:
             return await bot.sendMessage(from, { text: "❌ Invalid option. Try again." }, { quoted: receivedMessage });
