@@ -33,7 +33,7 @@ const result = await getFBInfo(q);
 ┏━┫*⚬Lααɾα-ᴍᴅ-ꜰʙ⚬*┣━✾
 ┃            *ᴸ  ͣ  ͣ  ͬ  ͣ  ✻  ᴸ  ͣ  ͣ  ͬ  ͣ*
 ┻
-*⌛ᴅᴜʀᴀᴛɪᴏɴ* : ${Fb.result.duration}
+*⌛ᴅᴜʀᴀᴛɪᴏɴ* : ${result.title}
 
 *🔢 ʀᴇᴘʟʏ ʙᴇʟᴏᴡ ᴛʜᴇ ɴᴜᴍʙᴇʀ*
 
