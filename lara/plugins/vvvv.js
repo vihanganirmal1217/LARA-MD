@@ -102,7 +102,6 @@ const buttonMessage = {
 }
 await conn.buttonMessage(from, buttonMessage, mek)
 } catch (e) {
-  reply(N_FOUND)
   console.log(e)
 }
 })
